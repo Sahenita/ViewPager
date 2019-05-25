@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".MainActivity"
+        android:background="@color/colorAccent">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#E53344"
+                android:orientation="vertical">
+        <TextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="@dimen/title_test_size"
+                android:layout_marginTop="@dimen/margin_top_titletext"
+                android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                android:gravity="center"
+                android:paddingBottom="@dimen/text_padding"
+                android:paddingTop="@dimen/text_padding"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/my_custom_font_italic_bold"
+        />
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                android:layout_marginRight="@dimen/margin_left_For_each_view"
+                >
+
+            <ImageView
+                    android:id="@+id/product_big_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+            />
+
+        </RelativeLayout>
+            <include
+                    android:id="@+id/product_details_slider_layout"
+                    layout="@layout/product_details_slider_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                    android:layout_marginRight="@dimen/margin_left_For_each_view"
+                    android:layout_marginTop="@dimen/margin_left_For_each_view"
+
+            />
+
+            <LinearLayout
+                    android:id="@+id/lin_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_left_For_each_view"
+                    android:orientation="vertical">
+                <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/drescription"
+                        android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/testsize_drisciption_heading"
+                        android:fontFamily="@font/my_custom_font_italic_bold"
+                />
+                <TextView
+                        android:id="@+id/tv_des_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="@dimen/margin_top_titletext"
+                        android:layout_marginBottom="@dimen/margin_top_titletext"
+                        android:fontFamily="@font/my_custom_font"
+                        android:textSize="@dimen/textsize_driscription_block"
+
+                        />
+                <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/date"
+                        android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/testsize_drisciption_heading"
+                        android:fontFamily="@font/my_custom_font_italic_bold"
+                />
+                <TextView
+                        android:id="@+id/tv_date_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginLeft="@dimen/margin_left_For_each_view"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="@dimen/margin_top_titletext"
+                        android:layout_marginBottom="@dimen/margin_left_For_each_view"
+                        android:fontFamily="@font/my_custom_font"
+                        android:textSize="@dimen/textsize_driscription_block"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

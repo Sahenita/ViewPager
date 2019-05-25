@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_test_size">23sp</dimen>
+    <dimen name="margin_left_For_each_view">10dp</dimen>
+    <dimen name="horizontal_image_size">170dp</dimen>
+    <dimen name="dresciption_text_magintop">20dp</dimen>
+    <dimen name="testsize_drisciption_heading">27sp</dimen>
+    <dimen name="textsize_driscription_block">18sp</dimen>
+    <dimen name="viewpager_hight">80dp</dimen>
+    <dimen name="text_padding">6dp</dimen>
+    <dimen name="margin_top_titletext">5dp</dimen>
+    <dimen name="margin_right_row_item">10dp</dimen>
+</resources>
